@@ -574,8 +574,8 @@
       renderThemeBars("positiveThemeBars", dept.positiveThemeCounts, POSITIVE_ORDER);
       renderThemeBars("negativeThemeBars", dept.negativeThemeCounts, NEGATIVE_ORDER);
       document.getElementById("actionPoint").textContent = dept.actionPoint;
-      document.getElementById("positiveCountText").textContent = `전체 만족 의견 ${formatNumber(dept.positiveCount)}건`;
-      document.getElementById("negativeCountText").textContent = `전체 아쉬움 의견 ${formatNumber(dept.negativeCount)}건`;
+      document.getElementById("positiveCountText").textContent = `전체 만족 의견 ${formatNumber(dept.positiveCount)}건 및 대표 만족 의견 `;
+      document.getElementById("negativeCountText").textContent = `전체 아쉬움 의견 ${formatNumber(dept.negativeCount)}건 및 대표 아쉬움 의견`;
       renderCommentSection("topPositiveComments", "allPositiveComments", dept.topPositiveComments, dept.allPositiveComments);
       renderCommentSection("topNegativeComments", "allNegativeComments", dept.topNegativeComments, dept.allNegativeComments);
     }
